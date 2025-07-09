@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="seating.css">
+
+    <title>5 Sains Komputer</title>
+</head>
+<body>
+
+    <div id="header-container"></div>
+
+    <main>
+        <h1>Class Seating Position</h1>
+
+        <p>Remember your seat fellas?</p>
+
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="showSeating('current')">Class</button>
+            <button class="tab-btn" onclick="showSeating('exam1')">SPM 1</button>
+            <button class="tab-btn" onclick="showSeating('exam2')">SPM 2</button>
+        </div>
+        
+
+        <div id="seating-current" class="seating-tab">
+            <div class="seating-container">
+                <div class="classroom">
+                    <div class="teacher-desk">Teacher's Desk</div>
+                    <!-- Row 1 -->
+                    <div class="row-label"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Hanani</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Raihanna</span></div>
+                    <div class="aisle"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Nilam</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Alya</span></div>
+                    <div class="aisle"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Natasya</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Marsya</span></div>
+                    <div class="aisle"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Uzair</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Aidid</span></div>
+                    <!-- Row 2 -->
+                    <div class="row-label"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Amalia</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Adriana</span></div>
+                    <div class="aisle"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Irdina N</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Firzanah</span></div>
+                    <div class="aisle"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Afiqah</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Damia</span></div>
+                    <div class="aisle"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Fawwaz</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Hakimi</span></div>
+                    <!-- Row 3 -->
+                    <div class="row-label"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Irdina F</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Durra</span></div>
+                    <div class="aisle"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Zahirah</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Masyitah</span></div>
+                    <div class="aisle"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Nia</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Amni</span></div>
+                    <div class="aisle"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Aqil</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Danish</span></div>
+                    <!-- Row 4 -->
+                    <div class="row-label"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Najwa</span></div>
+                    <div class="seat"><span class="student-name"></span></div>
+                    <div class="aisle"></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Nadhirah</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Ashyreen</span></div>
+                    <div class="aisle"></div>
+                    <div class="seat"><span class="student-name"></span></div>
+                    <div class="seat"><span class="student-name"></span></div>
+                    <div class="aisle"></div>
+                    <div class="seat"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Hafiz</span></div>
+                </div>
+            </div>
+        </div>
+        <div id="seating-exam1" class="seating-tab" style="display:none;">
+            <div class="seating-container">
+                <div class="classroom1">
+                    <div class="teacher-desk1">Invigilator's Desk</div>
+
+                    <div class="row-label1"></div>
+
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Marsya</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Irdina F</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Nia</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Natasya</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Aidid</span></div>
+
+                    <div class="row-label1"></div>
+
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Hanani</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Irdina N</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Adrianna</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Uzair</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Amalia</span></div>
+
+                    <div class="row-label1"></div>
+                    
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Najwa</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Firzanah</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Afiqah</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Hakimi</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Aqil</span></div>
+
+                    <div class="row-label1"></div>
+                    
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Nilam</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Damia</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Amni</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Hafiz</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Danish</span></div>
+
+                    <div class="row-label1"></div>
+                    
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Alya</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Ashyreen</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Nadhirah</span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Fawwaz</span></div>
+                    <div class="aisle"></div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="seating-exam2" class="seating-tab" style="display:none;">
+            <div class="seating-container">
+                <div class="classroom1">
+                    <div class="teacher-desk1">Invigilator's Desk</div>
+
+                    <div class="row-label1"></div>
+
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Masyitah</span></div>
+
+                    <div class="row-label1"></div>
+
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Raihanna</span></div>
+
+                    <div class="row-label1"></div>
+                    
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Durra</span></div>
+
+                    <div class="row-label1"></div>
+                    
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name">Zahirah</span></div>
+
+                    <div class="row-label1"></div>
+                    
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="seat"><img class="avatar" src="avatar.png" alt="Avatar" style="width:30px; height:30px;"><span class="student-name"></span></div>
+                    <div class="aisle"></div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="include.js"></script>
+    <script>
+    function showSeating(type) {
+      document.getElementById('seating-current').style.display = (type === 'current') ? 'block' : 'none';
+      document.getElementById('seating-exam1').style.display = (type === 'exam1') ? 'block' : 'none';
+      document.getElementById('seating-exam2').style.display = (type === 'exam2') ? 'block' : 'none';
+      // Tab button active state
+      var btns = document.getElementsByClassName('tab-btn');
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.remove('active');
+      }
+      if (type === 'current') btns[0].classList.add('active');
+      else if (type === 'exam1') btns[1].classList.add('active');
+      else if (type === 'exam2') btns[2].classList.add('active');
+    }
+    </script>
+</body>
+</html>
