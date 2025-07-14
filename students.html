@@ -13,8 +13,16 @@
         <h1>The Students</h1>
             
             <p>These students also known as post pandemic batch (batch 07/08). </p>
+
+            <div class="tab-container">
+              <button class="tab-btn active" onclick="showSeating('students-table')">Students</button>
+              <button class="tab-btn" onclick="showSeating('organizational-chart')">Organizational Chart</button>
+              <button class="tab-btn" onclick="showSeating('exam2')">Meet & Greet</button>
+          </div>
             
-            <img src="img/duh.jpg" alt="students" style="width: 70%; height: auto; display: block; margin: 0 auto; margin-bottom: 40px; margin-top: 40px;">
+            <div id="students-table" style="display: block;">
+              <h2>Students</h2>
+              <p>LONG LIVE THE EMPIREE RAWHHHHHH 🦅🦅🦅🔥🔥🔥</p>
 
             <table style="width:100%">
               <tr>
@@ -52,13 +60,33 @@
               <tr><td>27</td><td>SYAFIQAH DURRA BINTI SAIPUL BAHRI</td><td>BB037A087</td></tr>
               <tr><td>28</td><td class="highlight">★ZAHIRAH DANIA BINTI ZAINIZAM★</td><td>BB037A088</td></tr>
             </table>
-            
-    </main>
+            </div>
+
+            <div id="organizational-chart" style="display: none;">
+              <h2>Organizational Chart</h2>
+              <p>This is the organizational chart for the students.</p>
+              <img src="img/duh.jpg" alt="students" style="width: 70%; height: auto; display: block; margin: 0 auto; margin-bottom: 40px; margin-top: 40px;">
+            </div>
+    
+      </main>
 
     <div id="footer-container"></div>
 
     <script src="include.js"></script>
+    <script>
+      function showSeating(type) {
+        document.getElementById('students-table').style.display = (type === 'students-table') ? 'block' : 'none';
+        document.getElementById('organizational-chart').style.display = (type === 'organizational-chart') ? 'block' : 'none';
+        // Tab button active state
+        var btns = document.getElementsByClassName('tab-btn');
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].classList.remove('active');
+        }
+        if (type === 'current') btns[0].classList.add('active');
+        else if (type === 'exam1') btns[1].classList.add('active');
+        else if (type === 'exam2') btns[2].classList.add('active');
+      }
+      </script>
 
-    
 </body>
 </html>

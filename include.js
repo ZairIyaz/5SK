@@ -14,4 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
     loadHTML('header.html', 'header-container');
     loadHTML('footer.html', 'footer-container');
     }
-); 
+);
+
