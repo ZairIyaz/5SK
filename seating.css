@@ -1,3 +1,17 @@
+@media (max-width: 900px) {
+    .classroom, .classroom1 {
+        grid-template-columns: repeat(5, auto);
+        gap: 6px;
+    }
+    .seating-container {
+        padding: 0 5px;
+    }
+    .seat img.avatar {
+        width: 40px !important;
+        height: auto !important;
+    }
+}
+
 table, th, td {
     text-align: center;
     border: 1px solid black;
@@ -14,9 +28,18 @@ table, th, td {
 }
 
 .seating-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.classroom, .classroom1 {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(11, auto); /* or adjust based on your seat/aisle count */
+    gap: 10px;
+    justify-content: center;
 }
 
 .classroom {
@@ -100,6 +123,13 @@ table, th, td {
 
 .seat:hover .student-name {
     opacity: 1;
+}
+
+.teacher-desk, .teacher-desk1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .teacher-desk {
