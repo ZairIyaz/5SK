@@ -1,14 +1,12 @@
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .classroom, .classroom1 {
-        grid-template-columns: repeat(5, auto);
-        gap: 6px;
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        gap: 5px;
     }
-    .seating-container {
-        padding: 0 5px;
-    }
-    .seat img.avatar {
-        width: 40px !important;
-        height: auto !important;
+    .seat {
+        min-width: 50px;
+        height: 40px;
+        font-size: 12px;
     }
 }
 
@@ -28,18 +26,16 @@ table, th, td {
 }
 
 .seating-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     width: 100%;
+    max-width: 100vw;
+    overflow-x: auto;
 }
 
 .classroom, .classroom1 {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(11, auto); /* or adjust based on your seat/aisle count */
-    gap: 10px;
-    justify-content: center;
+    min-width: max-content;
 }
 
 .classroom {
@@ -54,7 +50,7 @@ table, th, td {
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-auto-rows: auto;
-    gap: 15px 30px; /* row-gap column-gap for aisles */
+    gap: 15px 30px;
     justify-content: center;
   }
 
